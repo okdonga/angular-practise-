@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title></title>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-animate.js"></script>
+<!--   <link href='styles/main.css' rel='stylesheet' type="text/css"> -->
+</head>
+<body ng-app="jobPostingApp">
+  <h1>Sign up please! </h1>
+  <div ng-controller="loginCtrl">
+    <form name="loginForm">
+      <label>Name *</label>
+      <input type="text" required placeholder="Your fullname" ng-model="user.name">
+      <label>Email *</label>
+      <input type="email" required placeholder="Enter email" ng-model="user.email">
+      <label>Password *</label>
+      <input type="password" required placeholder="Password" ng-model="user.password">
+      <button type="submit" ng-click="update(user)" value="Signup">Sign up</button>
+    </form>
+    <h2>User</h2>
+    {{user}}
+    <pre>user = {{user | json}}</pre>
+    <pre>master = {{master | json}}</pre>
+    <div>loginForm is {{loginForm.$valid}}</div>
+  </div>
+
+
+  <script src="scripts/app.js" type="text/javascript"></script>
+  <script src="controllers/mainCtrl.js"></script>
+  <script src="controllers/loginCtrl.js"></script>
+</body>
+</html>

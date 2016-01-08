@@ -1,0 +1,13 @@
+.debug {
+  outline-color: red;
+}
+
+.like {
+  color: red;
+}
+
+.dislike {
+  color: green;
+}
+
+/*display:none.hidden->block*/
