@@ -1,5 +1,17 @@
 .debug {
-  outline-color: red;
+  outline: 1px solid red;
+}
+
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0
+  ;
+}
+
+h2 {
+  color: #616367;
+  font-weight: 700;
 }
 
 .like {
@@ -10,4 +22,94 @@
   color: green;
 }
 
-/*display:none.hidden->block*/
+.l-half {
+  background-color: #616367;
+  width: 20%;
+  height: 100%;
+  float: left;
+  position: fixed;
+}
+
+.r-half {
+  width: 80%;
+  margin-left: 20%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  background-color: #f39c12;
+}
+
+.main-content {
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+input {
+    line-height: 2;
+    width: 20em;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.input-text {
+  margin: 5px 0px 20px 0px;
+}
+
+.sign-up-button {
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #202020;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+  color: #fff;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.nav-link {
+  margin-top: 5%;
+}
+
+.nav.nav>li>a {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav>li>a:hover {
+  background-color: #444;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*
+  JOB LISTINGS PAGE
+*/
+
+.job-posts {
+  list-style: none;
+}
+
+.job-posts>p>a {
+  text-decoration: none;
+  color: #fff
+}
+
+
+.job-posts>p>a:hover {
+  opacity: 0.5;
+}

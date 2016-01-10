@@ -1,36 +1,41 @@
 app.controller('mainCtrl', function($scope) {
+
   $scope.model = {
     jobs: [{
       id: 0,
       title: "Junior web developer",
-      company: "Uber"
+      company: "Uber",
+      description: "asdfasefasdf"
     }, {
       id: 1,
       title: "Java developer",
-      company: "Twitter"
+      company: "Twitter",
+      description: "asdfasefasdf"
     }, {
       id: 2,
       title: "Rails developer",
-      company: "Google"
-    }],
-    selected: {}
+      company: "Google",
+      description: "asdfasefasdf"
+    }]
   };
+
+  // $scope.detail = $scope.model.jobs[$routeParams.id];
 
   // Like particular job
   $scope.like = function(index) {
-    console.log("you like this job" + index);
-    console.log($scope.model.selected);
-    console.log($scope.model.jobs[index]);
     $scope.model.jobs[index].like = true;
-    console.log($scope.model.jobs[index]);
     // add class to indicate like
   };
 
   // Dislike particular job
   $scope.dislike = function(index) {
-    console.log("you do not like this job");
     $scope.model.jobs[index].like = false;
-    console.log($scope.model.jobs[index]);
   };
+
+  $scope.jobid = function(id) {
+    $scope.idNum = $scope.model.jobs[id];
+    console.log($scope.idNum);
+
+  }
 });
 
