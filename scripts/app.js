@@ -22,14 +22,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
 
     .state('job', {
-            url: '/jobs/:jobId',
+            url: '/jobs/:id',
             templateUrl: 'job-partial.html',
             controller: 'mainCtrl',
             resolve: {
                 job: function($stateParams) {
-                    // console.log($stateParams);
-                    var id = $stateParams.jobId;
-                    // console.log(id);
+                    console.log($stateParams);
+                    var id = $stateParams.id;
+                    console.log(id);
                     return id;
                 }
             }

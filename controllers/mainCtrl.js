@@ -19,9 +19,12 @@ app.controller('mainCtrl', function($scope, $stateParams) {
     }]
   };
 
+  // $scope.jobs = $stateParams.jobId;
+
+  // specific job page
   var ctrl = this;
-  ctrl.jobId = $stateParams.jobId;
-  $scope.detail = ctrl.jobId
+  $scope.jobId = $stateParams.id;
+
 
   // Like particular job
   $scope.like = function(index) {

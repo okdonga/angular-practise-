@@ -2,8 +2,7 @@
   <h2>Job Listings</h2>
   <div ng-repeat="job in model.jobs" ng-class="{like: job.like === true, dislike: job.like === false}">
     <li class="job-posts">
-      {{ctrl.jobId}}
-      <p><a href="#" ui-sref-"jobs({jobId: job.id})">{{job.title}} | {{job.company}}</a></p>
+      <p><a ui-sref="jobs({id: job.id})">{{job.title}} | {{job.company}}</a></p>
       <button ng-click="like($index)" ng-class="{like: job.like === 'true'}">Like</button>
       <button ng-click="dislike($index)" ng-class="dislike">Dislike</button>
       {{job}}
