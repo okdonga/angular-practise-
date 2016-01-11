@@ -14,13 +14,20 @@ h2 {
   font-weight: 700;
 }
 
+.fl-l {
+  float: left;
+}
+
 .like {
-  color: red;
+  background-image:url("../image/heart.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
 }
 
 .dislike {
-  color: green;
+  background-color: #ccc;
 }
+
 
 .l-half {
   background-color: #616367;
@@ -40,29 +47,39 @@ h2 {
 }
 
 .main-content {
-  margin-top: 10%;
-  margin-left: 20%;
+  margin: 10% 20% 0;
 }
 
+
 input {
-    line-height: 2;
-    width: 20em;
-    border-radius: 5px;
-    padding-left: 10px;
-    font-size: 12px;
+  line-height: 2;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+  border: solid #fff;
 }
 
 .input-text {
   margin: 5px 0px 20px 0px;
 }
 
+.sign-up-outer {
+  text-align: center;
+}
+
 .sign-up-button {
   color: #fff;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid #fff;
+  padding: 15px 25px;
+  border: solid #fff;
   border-radius: 4px;
   background: transparent;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .button:hover {
@@ -83,33 +100,73 @@ input {
   margin-top: 5%;
 }
 
-.nav.nav>li>a {
+.nav>li>a {
   font-weight: bold;
   font-size: 1.2em;
   color: #fff;
   text-decoration: none;
 }
 
-.nav>li>a:hover {
-  background-color: #444;
-  color: #fff;
+.nav>li.active>a, .nav>li.active>a:focus, .nav>li>a:hover {
+  color: #f39c12;
   text-decoration: underline;
+  font-weight: bolder;
 }
 
 /*
   JOB LISTINGS PAGE
 */
 
+
 .job-posts {
   list-style: none;
+  margin-bottom: 2em;
+  padding-bottom: 10px;
 }
 
-.job-posts>p>a {
+.job-lists {
+   padding-left: 36px;
+   margin-left: -37px;
+}
+
+.title>a {
   text-decoration: none;
   color: #fff
 }
 
 
-.job-posts>p>a:hover {
+.title>a:hover {
   opacity: 0.5;
+}
+
+.title>a {
+  float: left;
+  margin-right: 10px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+/*
+  JOB-DETAIL PAGE
+*/
+.job-detail {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/*
+  LOGIN PAGE
+*/
+label {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+ {
+  background-color: #ccc;
 }

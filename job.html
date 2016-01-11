@@ -1,11 +1,11 @@
 <div ng-controller="mainCtrl" class="main-content">
   <h2>Job Listings</h2>
-  <div ng-repeat="job in model.jobs" ng-class="{like: job.like === true, dislike: job.like === false}">
+  <div ng-repeat="job in model.jobs" ng-class="{like: job.like === true, dislike: job.like === false}" class="job-lists">
     <li class="job-posts">
-      <p><a ui-sref="jobs({id: job.id})">{{job.title}} | {{job.company}}</a></p>
-      <button ng-click="like($index)" ng-class="{like: job.like === 'true'}">Like</button>
-      <button ng-click="dislike($index)" ng-class="dislike">Dislike</button>
-      {{job}}
+      <h3 class="title"><a ui-sref="job({id: job.id})">{{job.title}} | {{job.company}}</a></h3>
+      <div ng-click="like($index)" ng-class="{like: job.like === 'true'}" class="fl-l"><button>Like</button></div>
+      <div ng-click="dislike($index)" ng-class="dislike"><button >Dislike</button></div>
+      <!-- <div>{{ job }}</div> -->
     </li>
   </div>
 </div>

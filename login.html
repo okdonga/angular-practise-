@@ -7,7 +7,9 @@
       <input type="email" class="input-text"  required placeholder="Enter email" ng-model="user.email"><br>
       <label>Password *</label><br>
       <input type="password" class="input-text" required placeholder="Password" ng-model="user.password"><br>
-      <button type="submit" class="input-text button sign-up-button" ng-click="save(user, loginForm)" value="Signup">Sign up</button>
+      <div class="sign-up-outer">
+        <button type="submit" class="input-text button sign-up-button" ng-click="save(user, loginForm)" value="Signup">Sign up</button>
+      </div>
     </form>
     <h2>User</h2>
     {{user}}

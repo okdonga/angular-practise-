@@ -3,7 +3,6 @@ var app = angular.module("jobPostingApp", ['ui.router']);
 app.config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
-  // $locationProvider.html5Mode(true);
 
   $stateProvider
 
@@ -11,7 +10,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/register',
             templateUrl: 'login.html',
             controller: 'loginCtrl'
-
     })
 
     .state('jobs', {
@@ -27,9 +25,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'mainCtrl',
             resolve: {
                 job: function($stateParams) {
-                    console.log($stateParams);
+                    // console.log($stateParams);
                     var id = $stateParams.id;
-                    console.log(id);
+                    // console.log(id);
                     return id;
                 }
             }
