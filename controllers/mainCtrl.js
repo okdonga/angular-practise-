@@ -34,10 +34,5 @@ app.controller('mainCtrl', function($scope, $stateParams) {
     $scope.model.jobs[index].like = false;
   };
 
-  $scope.jobid = function(id) {
-    $scope.idNum = $scope.model.jobs[id];
-    console.log($scope.idNum);
-
-  }
 });
 
