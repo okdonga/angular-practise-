@@ -1,25 +1,27 @@
-app.controller('mainCtrl', function($scope) {
+app.controller('mainCtrl', function($scope, $stateParams) {
 
   $scope.model = {
     jobs: [{
       id: 0,
       title: "Junior web developer",
       company: "Uber",
-      description: "asdfasefasdf"
+      description: "Details description of Junior web developer for Uber"
     }, {
       id: 1,
       title: "Java developer",
       company: "Twitter",
-      description: "asdfasefasdf"
+      description: "Details description of Java Developer for Twitter"
     }, {
       id: 2,
       title: "Rails developer",
       company: "Google",
-      description: "asdfasefasdf"
+      description: "Details description of Rails developer for Google"
     }]
   };
 
-  // $scope.detail = $scope.model.jobs[$routeParams.id];
+  var ctrl = this;
+  ctrl.jobId = $stateParams.jobId;
+  $scope.detail = ctrl.jobId
 
   // Like particular job
   $scope.like = function(index) {

@@ -1,6 +1,4 @@
 <div ng-controller="mainCtrl" class="main-content">
-  <h2>Specific job</h2>
-  <p>{{ model.jobs }}</p>
-  <p>{{ model.jobs[0] }}</p>
-  <p>{{ params }}</p>
+  <h2>{{ model.jobs[detail].title }}</h2>
+  <p>{{ model.jobs[detail].description }}</p>
 </div>
