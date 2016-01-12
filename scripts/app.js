@@ -25,9 +25,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'mainCtrl',
             resolve: {
                 job: function($stateParams) {
-                    // console.log($stateParams);
                     var id = $stateParams.id;
-                    // console.log(id);
                     return id;
                 }
             }

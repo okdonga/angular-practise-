@@ -5,7 +5,7 @@
       <h3 class="title"><a ui-sref="job({id: job.id})">{{job.title}} | {{job.company}}</a></h3>
       <div ng-click="like($index)" ng-class="{like: job.like === 'true'}" class="fl-l"><button>Like</button></div>
       <div ng-click="dislike($index)" ng-class="dislike"><button >Dislike</button></div>
-      <!-- <div>{{ job }}</div> -->
+      <div>{{ job }}</div>
     </li>
   </div>
 </div>

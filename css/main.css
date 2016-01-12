@@ -1,5 +1,5 @@
 .debug {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 body {
@@ -50,6 +50,9 @@ h2 {
   margin: 10% 20% 0;
 }
 
+/*
+  LOGIN PAGE
+*/
 
 input {
   line-height: 2;
@@ -113,6 +116,18 @@ input {
   font-weight: bolder;
 }
 
+label {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+ {
+  background-color: #ccc;
+}
+
 /*
   JOB LISTINGS PAGE
 */
@@ -154,19 +169,4 @@ button {
 .job-detail {
   font-size: 1.2em;
   font-weight: 600;
-}
-
-/*
-  LOGIN PAGE
-*/
-label {
-  font-size: 1.2em;
-  font-weight: bolder;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
- {
-  background-color: #ccc;
 }

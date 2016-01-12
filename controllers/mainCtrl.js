@@ -19,16 +19,8 @@ app.controller('mainCtrl', function($scope, $stateParams) {
     }]
   };
 
-  // Grabs job id and passes as params
-  // console.log("testing this apge");
-  // console.log($stateParams);
-  // $scope.jobs = $stateParams.jobId;
-  // console.log("second");
-  // console.log($stateParams.jobId);
-
   // specific job page
   var ctrl = this;
-  // console.log($stateParams.id);
   $scope.jobId = $stateParams.id;
 
   // Like particular job
